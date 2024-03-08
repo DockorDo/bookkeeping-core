@@ -1,31 +1,35 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "baseUrl": "./", // 解析非相对模块的基础地址，默认是当前目录
-    "types": ["@emotion/react/types/css-prop"],
+    "types": [
+      "@emotion/react/types/css-prop"
+    ],
+    "baseUrl": "./",
     "paths": {
-      "@": [
-        "./src"
+      "@/*": [
+        "./src/*"
       ],
-      "components": [
-        "./src/components"
+      "layouts/*": [
+        "./src/layouts/*"
       ],
-      "styles": [
-        "./src/styles"
+      "styles/*": [
+        "./src/styles/*"
       ],
-      "views": [
-        "./src/views"
+      "components/*": [
+        "./src/components/*"
       ],
-      "layouts": [
-        "./src/layouts"
+      "views/*": [
+        "./src/views/*"
       ],
-      "utils": [
-        "./src/utils"
+      "utils/*": [
+        "./src/utils/*"
       ],
-      "apis": [
-        "./src/apis"
+      "apis/*": [
+        "./src/apis/*"
       ],
-       "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
+      "@mui/styled-engine": [
+        "./node_modules/@mui/styled-engine-sc"
+      ]
     },
     "useDefineForClassFields": true,
     "lib": [
@@ -35,14 +39,12 @@
     ],
     "module": "ESNext",
     "skipLibCheck": true,
-    /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution":"Bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -53,6 +55,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
   ],
+  "exclude": ["node_modules"],
   "references": [
     {
       "path": "./tsconfig.node.json"

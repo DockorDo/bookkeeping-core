@@ -1,9 +1,17 @@
 import styled from '@emotion/styled'
+import Layout from 'layouts/Layout.tsx'
 
 const Container = styled.header`
-  color: ${prop=> prop.color};
+  width: 100%;
+  height: 100vh;
 `
+
 function App() {
-  return ( <Container color="blue">This my button component.</Container>)
+  return ( <Container>
+    <Layout></Layout>
+  </Container>)
 }
+
+
+
 export default App;
