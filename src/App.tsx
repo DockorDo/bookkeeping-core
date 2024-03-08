@@ -1,6 +1,9 @@
+import styled from '@emotion/styled'
 
-export default function App() {
-  return (
-    <div>Hello Bookkeeping</div>
-  )
+const Container = styled.header`
+  color: ${prop=> prop.color};
+`
+function App() {
+  return ( <Container color="blue">This my button component.</Container>)
 }
+export default App;
