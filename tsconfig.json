@@ -24,6 +24,7 @@
       "apis": [
         "./src/apis"
       ],
+       "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
     },
     "useDefineForClassFields": true,
     "lib": [
