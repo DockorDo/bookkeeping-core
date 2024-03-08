@@ -3,11 +3,26 @@
     "target": "ES2020",
     "baseUrl": "./", // 解析非相对模块的基础地址，默认是当前目录
     "paths": {
-      "pkg": [
-        "./packages"
-      ],
       "@": [
         "./src"
+      ],
+      "components": [
+        "./src/components"
+      ],
+      "styles": [
+        "./src/styles"
+      ],
+      "views": [
+        "./src/views"
+      ],
+      "layouts": [
+        "./src/layouts"
+      ],
+      "utils": [
+        "./src/utils"
+      ],
+      "apis": [
+        "./src/apis"
       ],
     },
     "useDefineForClassFields": true,
